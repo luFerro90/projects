@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joker2</title>
+    <style>
+        body {
+            font-family: "Anton SC", Courier, monospace;
+            color: #333;
+            background: linear-gradient(to right, #838383, #f50307);
+            margin: 0;
+            padding: 0;
+			background-size: cover;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #F50307;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			background-image: url("joker-2.png");
+			background-size: cover;
+			height: 600px;
+			padding-top: 20%;
+			
+				
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 10px 0;
+      }
+
+        header h4 {
+            font-size: 1.5rem;
+            margin:  0 0 20px 0;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(253, 0, 0, 0.8);
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: #820A0C;
+            transform: scale(1.1);
+			
+        }
+		
+		.video-container {
+  			position: relative;
+  			padding-bottom: 56.25%;
+			margin: 20px auto;
+			
+			
+		}
+
+		.video-container iframe {
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		  width: 100%;
+		  height: 100%;
+		}
+
+        .container {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 20px;
+			max-width: 80%;
+			
+			
+		
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        .center-section, .info-section {
+            margin-top: 30px;
+			background: rgba(147, 27, 11, 0.8);
+			padding: 40px 20px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.8);
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer a {
+            color: #fcb69f;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #ffecd2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <h1>joker</h1>
+		 <h4>only in theaters</h4>
+		 
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="https://www.imdb.com/title/tt11315808/">Cast</a>
+        <a href="https://www.digitalspy.com/movies/a29263125/joker-2-release-date-cast-trailer-plot/">Promo</a>
+    </nav>
+	 
+	<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/_OKAwz2MsJs"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+    allowfullscreen></iframe>
+</div>
+<div class="container" id="home">
+        <div class="content">
+            <div class="text">
+                <h4>Movie of the Year</h4>
+                <h2>Joker 2</h2>
+				<p>Daring, Brave, and Creative</p>
+            </div>
+            <div class="image">
+                <img src="city on flames.webp" alt="harley">
+            </div>
+        </div>
+    </div>	
+ <div class="center-section" id="cast">
+        <div class="content">
+			<div class="image">
+                <img src="joker.webp" alt="">
+            </div>
+            <div class="text">
+                <h4>Starring</h4>
+                <h2>Joaquin Phoenix</h2>
+				<p>as The Joker</p>
+            </div>
+            
+        </div>
+    </div>	  
+    <div class="container" id="home">
+        <div class="content">
+            <div class="text">
+                <h4>Starring</h4>
+                <h2>Lady GAGA</h2>
+				<p>as Harley Quinn</p>
+            </div>
+            <div class="image">
+                <img src="harleyq.jpg" alt="harley">
+            </div>
+        </div>
+    </div>	
+    <footer>
+        <p>&copy; 2024 Luis C Ferro, This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+      
+    </footer>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inception - Movie Promotion</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .logo img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section p {
+            line-height: 1.8;
+        }
+
+        section iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .gallery-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery-images img {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            margin-bottom: 20px;
+        }
+
+        .review blockquote {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .review p {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+        }
+
+        .social {
+            margin-bottom: 10px;
+        }
+
+        .social-icon {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        .social-icon:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="inception-logo.png" alt="Inception Logo">
+        </div>
+        <div class="tagline">
+            Your mind is the scene of the crime
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#synopsis">Synopsis</a></li>
+            <li><a href="#trailer">Trailer</a></li>
+            <li><a href="#cast-crew">Cast & Crew</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="banner">
+            <img src="inception-banner.jpg" alt="Inception Banner">
+            <div class="promo-text">
+                <h2>Enter the world of dreams with 'Inception'.</h2>
+                <p>A mind-bending thriller directed by Christopher Nolan.</p>
+            </div>
+        </section>
+
+        <section id="synopsis">
+            <h2>Synopsis</h2>
+            <p>Brief summary of the movie's plot involving dreams within dreams and corporate espionage.</p>
+        </section>
+
+        <section id="trailer">
+            <h2>Trailer</h2>
+            <!-- Replace the src with the actual YouTube embed link -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d3A3-zSOBT4" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <section id="cast-crew">
+            <h2>Cast & Crew</h2>
+            <ul>
+                <li><strong>Director:</strong> Christopher Nolan</li>
+                <li><strong>Starring:</strong> Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page, Tom Hardy, Ken Watanabe, Marion Cotillard, Michael Caine</li>
+                <li><strong>Composer:</strong> Hans Zimmer</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!-- Insert gallery images here -->
+            <div class="gallery-images">
+                <img src="gallery-image1.jpg" alt="Gallery Image 1">
+                <img src="gallery-image2.jpg" alt="Gallery Image 2">
+                <img src="gallery-image3.jpg" alt="Gallery Image 3">
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Reviews</h2>
+            <div class="review">
+                <blockquote>"Mind-bending and visually stunning, 'Inception' is a masterpiece of modern cinema."</blockquote>
+                <p>- The New York Times</p>
+            </div>
+            <div class="review">
+                <blockquote>"Christopher Nolan's best work to date, 'Inception' challenges the viewer's perception of reality."</blockquote>
+                <p>- Rolling Stone</p>
+            </div>
+        </section>
+
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Get your tickets now to experience 'Inception' on the big screen!</p>
+            <a href="https://example.com/tickets" class="btn">Buy Tickets</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <!-- Replace href with actual social media links -->
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <p>&copy; 2024 Inception Movie. All rights reserved.</p>
+        <p>Contact: info@inceptionmovie.com</p>
+    </footer>
+</body>
+</html>
